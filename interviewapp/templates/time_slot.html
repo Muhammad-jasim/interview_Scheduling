@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>time slots</title>
+</head>
+<body>
+    {% for i in time %}
+        {% if i >= itf and i <= itt %}
+            {% if i >= ctf and i >= ctt  %}
+                <p><a href="time_slots_save/{{ i }}" >{{ i }}</a></p>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+</body>
+</html>
